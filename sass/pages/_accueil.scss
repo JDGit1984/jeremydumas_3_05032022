@@ -1,0 +1,108 @@
+.loading{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    animation: loading-opacity 1s ease-in-out 2s forwards;
+    &__circle{
+        position: relative;
+        height:120px;
+        width: 120px;
+        @include loading-circle(1px, $color-tertiary);
+        animation: spin-reverse 2s linear infinite;
+        &::before{
+            content:'';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            bottom: 20px;
+            right: 20px;
+            @include loading-circle(3px, $color-primary);
+        }
+    }
+    &__text{
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        line-height: 100px;
+        @include loading-circle(2px, $color-secondary);
+        font-family: 'Shrikhand', cursive;
+        font-size: 60px;
+        animation: spin 1s linear infinite;
+    }
+}
+
+.booking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $lightgrey;
+    &__form{
+        width: 100%;
+        padding: 20px 0;
+        background-color: #EAEAEA;
+        text-align: center;
+        box-shadow: inset 0 5px 5px lightgrey;
+        margin-bottom: 40px;
+    }
+    &__hook{
+        padding: 0 4%;
+        text-align: center;
+    }
+    & input{
+        color: $darkgrey;
+        border: 0;
+        background-color: transparent;
+        outline: none;
+    }
+}
+
+.functioning{
+    padding: 40px 4%;
+    &__btn{
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        height: 60px;
+        border-radius: 15px;
+        background-color: $lightgrey;
+        @include box-shadow;
+        &:hover{
+            @include lightened_box($color-primary);
+        }
+    }
+    &__circle{
+        position: relative;
+        left: -15px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $color-primary;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+    }
+    &__text{
+        line-height: 60px;
+    }
+    i{
+        margin-right: 12px;
+    }
+    a:hover{
+        i{
+            color: $color-primary;
+        }
+    }
+}

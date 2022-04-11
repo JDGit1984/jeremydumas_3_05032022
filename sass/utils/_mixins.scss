@@ -1,0 +1,48 @@
+/* Teinte plus claire pour les couleurs déclarées */
+
+@mixin lightened_box($bg-color){
+    background-color: rgba($bg-color, .2);
+}
+
+/* Texte plus foncé à partir d'une couleur déclarée */
+
+@mixin darkened_text($txt-color){
+    color: darken($txt-color, 35%);
+}
+
+/* Ombre portée et marge sous les éléments */
+
+@mixin box-shadow($color: lightgrey, $margin-bottom: 20px){
+    box-shadow: 0 5px 10px $color;
+    margin-bottom: $margin-bottom;
+}
+
+/* Adaptation de la couleur du logo en fonction de la luminosité du background */
+
+@mixin bg-txt($bg-color){
+    background-color: $bg-color;
+    @if(lightness($bg-color) < 75%){
+        color: white;
+    }
+    @else{
+        color: black;
+    }
+}
+
+/* Adaptation de la longueur du text en fonction du :hover */
+
+@mixin text-ellipsis{
+    width: calc(100% - 100px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Cercles de chargement */
+
+@mixin loading-circle($border, $circle-color,){
+    border: $border solid transparent;
+    border-top-color: $circle-color;
+    border-bottom-color: $circle-color;
+    border-radius: 50%;
+}

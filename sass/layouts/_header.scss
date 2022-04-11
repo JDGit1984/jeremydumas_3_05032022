@@ -1,0 +1,17 @@
+header{
+    position: relative;
+    @include bg-txt(white);
+}
+
+header a{
+    position: absolute;
+    animation-name: arrow-shift;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    &:hover{
+        color: $color-primary;
+    }
+}

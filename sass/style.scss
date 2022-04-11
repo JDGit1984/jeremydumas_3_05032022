@@ -1,0 +1,149 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./pages/accueil";
+@import "./utils/loops";
+@import "./utils/keyframes";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./components/buttons";
+
+*{
+    font-family: 'Roboto', sans-serif; 
+}
+
+body{
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 16px 0;
+}
+
+h2, h3{
+    margin-block: 0;
+}
+
+h2{
+    margin-bottom: 24px;
+}
+
+h4{
+    font-family: 'Shrikhand', cursive;
+    margin: 0;
+    font-size: 2em;
+    button{
+        border: none;
+    }
+}
+
+h5{
+    margin-block: 0;
+    @include darkened_text($lightgrey);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+h5::after{
+    content:"";
+    display: block;
+    background-color: $color-tertiary;
+    height: 4px;
+    width: 50px;
+    margin: 4px 0 16px 0;
+}
+
+p{
+    margin-block: 0;
+}
+
+.logo{
+    font-family: 'Shrikhand', cursive;
+}
+
+.fa-map-marker-alt{
+    color: $darkgrey;
+}
+
+.restaurants{
+    padding: 40px 4%;
+    background-color: $lightgrey;
+    p{
+        margin-block: 0;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-radius: 20px;
+        @include box-shadow;        
+        &__img{
+            display: block;
+            position: relative;
+            object-fit: cover;
+            width: 100%;
+            height: 200px;
+            border-radius: 20px 20px 0 0;
+        }
+        article{
+            background-color: white;
+            border-radius: 0 0 20px 20px;
+            height: 40px;
+        }
+        p{
+            font-weight: lighter;
+        }
+        .heart-btn{
+            position: absolute;
+            right: 6%;
+            bottom: 20px;
+        }
+    }
+    .new{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: $color-tertiary;
+        padding: 8px 12px;
+        @include darkened_text($color-tertiary);
+    }
+    article{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 6%;
+    }
+}
+
+.bg-img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: 0 70%;
+    vertical-align: bottom;
+}
+.menu{
+    @include bg-txt($lightgrey);
+    border-radius: 32px 32px 0 0;
+    padding: 32px 6%;
+    position: relative;
+    margin-top: -32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rest_name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 32px;
+}

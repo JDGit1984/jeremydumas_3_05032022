@@ -1,0 +1,131 @@
+/* Bouton "Explorer nos restaurants" + "Commander" */
+
+.gradient-btn{
+    width: 200px;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    background: linear-gradient($color-secondary, $color-primary);
+    border-radius: 24px;
+    margin-bottom: 40px;
+    margin-top: 24px;
+    &:hover{
+        filter: brightness(1.2);
+    }
+}
+
+/* Bouton "cœur" */
+
+.heart-btn{
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    &:hover{
+        & .heart-btn__bg{
+            height: 32px;
+        }
+    }
+    &__bg{
+        position: absolute;
+        bottom: 1px;
+        right: 4px;
+        display: flex;
+        align-items: flex-end;
+        height: 0px;
+        overflow: hidden;
+        transition: height 1s;
+        .fa-heart::before{
+            background: linear-gradient($color-primary, $color-secondary);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+/* Boutons des plats */
+
+.dish{
+    position: relative;
+    min-height: 70px;
+    border-radius: 16px;
+    overflow: hidden;
+    @include box-shadow;
+    &__btn{
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        border: none;
+        background-color: white;
+        padding: 12px 4%;
+        &:hover + .dish__checkbox{
+            width: 70px;
+            .fa-check-circle{
+                transform: translateX(0) rotate(0turn);
+            }
+        }
+        &:hover .dish__name{
+            @include text-ellipsis;
+        }
+        &:hover .dish__text{
+            @include text-ellipsis;
+        }
+        &:hover .dish__price{
+            position: relative;
+            right: 70px;
+        }
+    }
+    &__name{
+        display: inline-block;
+        text-align: left;
+        margin: 0;
+        font-size: 20px;
+        width: 100%;
+        transition: width 500ms ease-in-out;
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-weight: 300;
+        text-align: left;
+        text-overflow: ellipsis;
+        width: 100%;
+        margin-top: 4px;
+    }
+    &__text{
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        transition: width 500ms ease-in-out;
+    }
+    &__price{
+        display: block;
+        font-weight: bolder;
+        right: 0px;
+        transition: right 500ms ease-in-out;
+    }
+    &__checkbox{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-tertiary;
+        width: 0px;
+        height: 100%;
+        vertical-align: middle;
+        text-align: center;
+        color: white;
+        transition: width 500ms ease-in-out;
+    }
+
+    .fa-check-circle{
+        display: inline-block;
+        transform: translateX(200%) rotate(-1turn);
+        transition: transform 500ms ease-in-out;
+
+    }
+}

@@ -1,0 +1,14 @@
+/* -- Pages restaurants (x4) -- */
+/* Boucle pour faire apparaître les différentes parties du menu */
+
+@for $i from 1 through 3 {
+    .sub-menu-#{$i} {
+        width: 100%;
+        overflow: hidden;
+        opacity: 0;
+        animation-name: dish-opacity;
+        animation-duration: 1s;  
+        animation-delay: calc(1s*$i - 1s);
+        animation-fill-mode: forwards;
+    }
+}

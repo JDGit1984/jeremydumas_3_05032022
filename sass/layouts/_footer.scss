@@ -1,0 +1,17 @@
+footer{
+    @include bg-txt($darkgrey);
+    padding: 20px 6%;
+    ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    li{
+        margin: 8px 0;
+    }
+    a{
+        color: white;
+    }
+    a:hover{
+        color: $color-secondary;
+    }
+}

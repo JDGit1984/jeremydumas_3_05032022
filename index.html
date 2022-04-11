@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Lien vers Fontawesome -->
+        <script src="https://kit.fontawesome.com/bf631194c6.js" crossorigin="anonymous"></script>
+
+        <!-- Lien vers Normalize -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+
+        <!-- Liens vers Google Fonts Shrikand et Roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="sass/style.css" />
+
+        <title>Accueil</title>
+
+    </head>
+    <body>
+
+        <!-- Page de chargement -->
+
+        <div class="loading"><div class="loading__circle"><span class="loading__text">o</span></div></div>
+
+        <!-- Header -->
+
+        <header>
+            <h1>ohmyfood</h1>
+        </header>
+
+        <!-- Section Réservation -->
+
+        <section class="booking">
+            <div class="booking__form">
+                <form method="post" action="#">
+                    <p><i class="fas fa-map-marker-alt"></i> <input type="text" name="ville" placeholder="Ville, quartier" /></p>
+                </form>
+            </div>
+            <h2>Réservez le menu qui <br>vous convient</h2>
+            <p class="booking__hook">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <a href="#" class="gradient-btn">Explorer nos restaurants</a>
+        </section>
+
+        <!-- Section Fonctionnement -->
+
+        <section class="functioning">
+            <h2>Fonctionnement</h2>
+            <a href="#" class="functioning__btn">
+                <p class="functioning__text">
+                    <span class="functioning__circle">1</span>
+                    <i class="fas fa-mobile-alt"></i> Choisissez un restaurant
+                </p>
+            </a>
+            <a href="#" class="functioning__btn">
+                <p class="functioning__text">
+                    <span class="functioning__circle">2</span>
+                    <i class="fas fa-list-ul"></i> Composez votre menu
+                </p>
+            </a>
+            <a href="#" class="functioning__btn">
+                <p class="functioning__text">
+                    <span class="functioning__circle">3</span>
+                    <i class="fas fa-store"></i> Dégustez au restaurant
+                </p>
+            </a>
+        </section>
+
+        <!-- Liste des restaurants -->
+
+        <section class="restaurants">
+            <h2>Restaurants</h2>
+            <div class="card">
+                <a href="palette.html">
+                    <img src="./images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" class="card__img">
+                    <div class="new">Nouveau</div>
+                    <article>
+                        <div>
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                    </article>
+                </a>
+                <button class="heart-btn">
+                    <i class="far fa-heart fa-2x"></i>
+                    <span class="heart-btn__bg"><i class="fas fa-heart fa-2x"></i></span>
+                </button>
+            </div>
+            <div class="card">
+                <a href="note.html">
+                    <img src="./images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" class="card__img">
+                    <span class="new">Nouveau</span>
+                    <article>
+                        <div>
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                    </article>
+                </a>
+                <button class="heart-btn">
+                    <i class="far fa-heart fa-2x"></i>
+                    <span class="heart-btn__bg"><i class="fas fa-heart fa-2x"></i></span>
+                </button>
+            </div>
+            <div class="card">
+                <a href="francaise.html">
+                    <img src="./images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" class="card__img">
+                    <article>
+                        <div>
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
+                        </div>
+                    </article>
+                </a>
+                <button class="heart-btn">
+                    <i class="far fa-heart fa-2x"></i>
+                    <span class="heart-btn__bg"><i class="fas fa-heart fa-2x"></i></span>
+                </button>
+            </div>
+            <div class="card">
+                <a href="delice.html">
+                    <img src="./images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" class="card__img">
+                    <article>
+                        <div>
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                    </article>
+                </a>
+                <button class="heart-btn">
+                    <i class="far fa-heart fa-2x"></i>
+                    <span class="heart-btn__bg"><i class="fas fa-heart fa-2x"></i></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+            <div class="logo">ohmyfood</div>
+            <ul>
+                <li><a href="#"><i class="fas fa-utensils fa-fw"></i> Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fas fa-hands-helping fa-fw"></i> Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto:#">Contact</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

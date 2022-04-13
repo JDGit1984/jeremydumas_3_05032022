@@ -1,7 +1,7 @@
 /* Teinte plus claire pour les couleurs déclarées */
 
 @mixin lightened_box($bg-color){
-    background-color: rgba($bg-color, .2);
+    background-color: rgba($bg-color, .15);
 }
 
 /* Texte plus foncé à partir d'une couleur déclarée */
@@ -12,7 +12,7 @@
 
 /* Ombre portée et marge sous les éléments */
 
-@mixin box-shadow($color: lightgrey, $margin-bottom: 20px){
+@mixin box-shadow($color: lightgrey, $margin-bottom: 22px){
     box-shadow: 0 5px 10px $color;
     margin-bottom: $margin-bottom;
 }

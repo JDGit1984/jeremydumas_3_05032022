@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* Couleurs de la charte */
+/* Largeurs des formats tablette + desktop */
 /* Teinte plus claire pour les couleurs déclarées */
 /* Texte plus foncé à partir d'une couleur déclarée */
 /* Ombre portée et marge sous les éléments */
@@ -16,8 +18,8 @@
   justify-content: center;
   align-items: center;
   background-color: white;
-  -webkit-animation: loading-opacity 1s ease-in-out 2s forwards;
-          animation: loading-opacity 1s ease-in-out 2s forwards;
+  -webkit-animation: loading-opacity 1s ease-in-out 1s forwards;
+          animation: loading-opacity 1s ease-in-out 1s forwards;
 }
 .loading__circle {
   position: relative;
@@ -69,7 +71,7 @@
 }
 .booking__form {
   width: 100%;
-  padding: 20px 0;
+  padding: 14px 0;
   background-color: #EAEAEA;
   text-align: center;
   box-shadow: inset 0 5px 5px lightgrey;
@@ -78,51 +80,122 @@
 .booking__hook {
   padding: 0 4%;
   text-align: center;
+  font-weight: 300;
+  font-size: 18px;
 }
 .booking input {
+  width: 40%;
   color: #353535;
+  text-align: center;
   border: 0;
   background-color: transparent;
   outline: none;
 }
+.booking h2 {
+  text-align: center;
+}
 
 .functioning {
-  padding: 40px 4%;
+  padding: 48px 5%;
+}
+.functioning h2 {
+  margin-bottom: 28px;
 }
 .functioning__btn {
   position: relative;
   display: flex;
   align-items: center;
-  margin-left: 15px;
-  height: 60px;
-  border-radius: 15px;
+  margin-left: 12px;
+  height: 74px;
+  border-radius: 20px;
   background-color: #F6F6F6;
   box-shadow: 0 5px 10px lightgrey;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 .functioning__btn:hover {
-  background-color: rgba(147, 86, 220, 0.2);
+  background-color: rgba(147, 86, 220, 0.15);
 }
 .functioning__circle {
   position: relative;
-  left: -15px;
+  left: -12px;
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background-color: #9356DC;
   color: white;
+  font-size: 12px;
   text-align: center;
-  line-height: 30px;
+  line-height: 24px;
+  margin-right: 8px;
 }
 .functioning__text {
-  line-height: 60px;
+  line-height: 72px;
 }
 .functioning i {
-  margin-right: 12px;
+  color: #9d9d9d;
+  margin-right: 22px;
 }
 .functioning a:hover i {
   color: #9356DC;
+}
+
+.restaurants {
+  padding: 54px 5% 40px 5%;
+  background-color: #F6F6F6;
+}
+.restaurants h2 {
+  margin-bottom: 22px;
+}
+.restaurants p {
+  margin-block: 0;
+}
+.restaurants .card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px lightgrey;
+  margin-bottom: 22px;
+}
+.restaurants .card__img {
+  display: block;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 174px;
+  border-radius: 16px 16px 0 0;
+}
+.restaurants .card article {
+  background-color: white;
+  border-radius: 0 0 16px 16px;
+  height: 44px;
+  padding: 18px 4%;
+}
+.restaurants .card p {
+  font-size: 17px;
+  font-weight: lighter;
+}
+.restaurants .card .heart-btn {
+  position: absolute;
+  right: 6%;
+  bottom: 30px;
+}
+.restaurants .new {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-color: #99E2D0;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #2c9c81;
+}
+.restaurants article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 6%;
 }
 
 /* -- Pages restaurants (x4) -- */
@@ -303,11 +376,12 @@ header a:hover {
 footer {
   background-color: #353535;
   color: white;
-  padding: 20px 6%;
+  padding: 24px 7%;
 }
 footer ul {
   list-style-type: none;
   padding: 0;
+  margin: 22px 0 10px 0;
 }
 footer li {
   margin: 8px 0;
@@ -319,16 +393,23 @@ footer a:hover {
   color: #FF79DA;
 }
 
+.logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
 /* Bouton "Explorer nos restaurants" + "Commander" */
 .gradient-btn {
-  width: 200px;
+  width: 184px;
   color: white;
   text-align: center;
   padding: 16px;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 24px;
-  margin-bottom: 40px;
-  margin-top: 24px;
+  box-shadow: 0 5px 10px lightgrey;
+  margin-bottom: 56px;
+  margin-top: 30px;
 }
 .gradient-btn:hover {
   filter: brightness(1.2);
@@ -346,7 +427,7 @@ footer a:hover {
 }
 .heart-btn__bg {
   position: absolute;
-  bottom: 1px;
+  bottom: 3px;
   right: 4px;
   display: flex;
   align-items: flex-end;
@@ -368,7 +449,7 @@ footer a:hover {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 5px 10px lightgrey;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 .dish__btn {
   cursor: pointer;
@@ -468,8 +549,9 @@ a {
 h1 {
   font-family: "Shrikhand", cursive;
   text-align: center;
+  font-size: 30px;
   margin: 0;
-  padding: 16px 0;
+  padding: 20px 0 10px 0;
 }
 
 h2, h3 {
@@ -477,7 +559,12 @@ h2, h3 {
 }
 
 h2 {
-  margin-bottom: 24px;
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-size: 17px;
+  margin-bottom: 4px;
 }
 
 h4 {
@@ -510,64 +597,8 @@ p {
   margin-block: 0;
 }
 
-.logo {
-  font-family: "Shrikhand", cursive;
-}
-
 .fa-map-marker-alt {
   color: #353535;
-}
-
-.restaurants {
-  padding: 40px 4%;
-  background-color: #F6F6F6;
-}
-.restaurants p {
-  margin-block: 0;
-}
-.restaurants .card {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  border-radius: 20px;
-  box-shadow: 0 5px 10px lightgrey;
-  margin-bottom: 20px;
-}
-.restaurants .card__img {
-  display: block;
-  position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 200px;
-  border-radius: 20px 20px 0 0;
-}
-.restaurants .card article {
-  background-color: white;
-  border-radius: 0 0 20px 20px;
-  height: 40px;
-}
-.restaurants .card p {
-  font-weight: lighter;
-}
-.restaurants .card .heart-btn {
-  position: absolute;
-  right: 6%;
-  bottom: 20px;
-}
-.restaurants .new {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: #99E2D0;
-  padding: 8px 12px;
-  color: #2c9c81;
-}
-.restaurants article {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 6%;
 }
 
 .bg-img {

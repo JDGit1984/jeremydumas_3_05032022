@@ -1,14 +1,14 @@
 /* Bouton "Explorer nos restaurants" + "Commander" */
 
 .gradient-btn{
-    width: 200px;
+    width: 184px;
     color: white;
     text-align: center;
     padding: 16px;
     background: linear-gradient($color-secondary, $color-primary);
     border-radius: 24px;
-    margin-bottom: 40px;
-    margin-top: 24px;
+    @include box-shadow(lightgrey, 56px);
+    margin-top: 30px;
     &:hover{
         filter: brightness(1.2);
     }
@@ -28,7 +28,7 @@
     }
     &__bg{
         position: absolute;
-        bottom: 1px;
+        bottom: 3px;
         right: 4px;
         display: flex;
         align-items: flex-end;

@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-    animation: loading-opacity 1s ease-in-out 2s forwards;
+    animation: loading-opacity 1s ease-in-out 1s forwards;
     &__circle{
         position: relative;
         height:120px;
@@ -49,7 +49,7 @@
     background-color: $lightgrey;
     &__form{
         width: 100%;
-        padding: 20px 0;
+        padding: 14px 0;
         background-color: #EAEAEA;
         text-align: center;
         box-shadow: inset 0 5px 5px lightgrey;
@@ -58,24 +58,34 @@
     &__hook{
         padding: 0 4%;
         text-align: center;
+        font-weight: 300;
+        font-size: 18px;
     }
     & input{
+        width: 40%;
         color: $darkgrey;
+        text-align: center;
         border: 0;
         background-color: transparent;
         outline: none;
     }
+    h2{
+        text-align: center;
+    }
 }
 
 .functioning{
-    padding: 40px 4%;
+    padding: 48px 5%;
+    h2{
+        margin-bottom: 28px;
+    }
     &__btn{
         position: relative;
         display: flex;
         align-items: center;
-        margin-left: 15px;
-        height: 60px;
-        border-radius: 15px;
+        margin-left: 12px;
+        height: 74px;
+        border-radius: 20px;
         background-color: $lightgrey;
         @include box-shadow;
         &:hover{
@@ -84,25 +94,84 @@
     }
     &__circle{
         position: relative;
-        left: -15px;
+        left: -12px;
         display: inline-block;
-        width: 30px;
-        height: 30px;
+        width: 24px;
+        height: 24px;
         border-radius: 50%;
         background-color: $color-primary;
         color: white;
+        font-size: 12px;
         text-align: center;
-        line-height: 30px;
+        line-height: 24px;
+        margin-right: 8px;
     }
     &__text{
-        line-height: 60px;
+        line-height: 72px;
     }
     i{
-        margin-right: 12px;
+        @include darkened_text($lightgrey);
+        margin-right: 22px;
     }
     a:hover{
         i{
             color: $color-primary;
         }
+    }
+}
+
+.restaurants{
+    padding: 54px 5% 40px 5%;
+    background-color: $lightgrey;
+    h2{
+        margin-bottom: 22px;
+    }
+    p{
+        margin-block: 0;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-radius: 20px;
+        @include box-shadow;        
+        &__img{
+            display: block;
+            position: relative;
+            object-fit: cover;
+            width: 100%;
+            height: 174px;
+            border-radius: 16px 16px 0 0;
+        }
+        article{
+            background-color: white;
+            border-radius: 0 0 16px 16px;
+            height: 44px;
+            padding: 18px 4%;
+        }
+        p{
+            font-size: 17px;
+            font-weight: lighter;
+        }
+        .heart-btn{
+            position: absolute;
+            right: 6%;
+            bottom: 30px;
+        }
+    }
+    .new{
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        background-color: $color-tertiary;
+        padding: 6px 12px;
+        font-size: 14px;
+        @include darkened_text($color-tertiary);
+    }
+    article{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 6%;
     }
 }

@@ -23,8 +23,9 @@ a{
 h1{
     font-family: 'Shrikhand', cursive;
     text-align: center;
+    font-size: 30px;
     margin: 0;
-    padding: 16px 0;
+    padding: 20px 0 10px 0;
 }
 
 h2, h3{
@@ -32,7 +33,12 @@ h2, h3{
 }
 
 h2{
-    margin-bottom: 24px;
+    margin-bottom: 14px;
+}
+
+h3{
+    font-size: 17px;
+    margin-bottom: 4px;
 }
 
 h4{
@@ -65,62 +71,8 @@ p{
     margin-block: 0;
 }
 
-.logo{
-    font-family: 'Shrikhand', cursive;
-}
-
 .fa-map-marker-alt{
     color: $darkgrey;
-}
-
-.restaurants{
-    padding: 40px 4%;
-    background-color: $lightgrey;
-    p{
-        margin-block: 0;
-    }
-    .card{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        border-radius: 20px;
-        @include box-shadow;        
-        &__img{
-            display: block;
-            position: relative;
-            object-fit: cover;
-            width: 100%;
-            height: 200px;
-            border-radius: 20px 20px 0 0;
-        }
-        article{
-            background-color: white;
-            border-radius: 0 0 20px 20px;
-            height: 40px;
-        }
-        p{
-            font-weight: lighter;
-        }
-        .heart-btn{
-            position: absolute;
-            right: 6%;
-            bottom: 20px;
-        }
-    }
-    .new{
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background-color: $color-tertiary;
-        padding: 8px 12px;
-        @include darkened_text($color-tertiary);
-    }
-    article{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 16px 6%;
-    }
 }
 
 .bg-img{

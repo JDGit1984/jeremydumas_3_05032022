@@ -50,10 +50,11 @@
     min-height: 70px;
     border-radius: 16px;
     overflow: hidden;
-    @include box-shadow;
+    @include box-shadow (lightgrey, 12px);
     &__btn{
         cursor: pointer;
         width: 100%;
+        min-height: 70px;
         text-align: left;
         border: none;
         background-color: white;
@@ -79,7 +80,7 @@
         display: inline-block;
         text-align: left;
         margin: 0;
-        font-size: 20px;
+        font-size: 17px;
         width: 100%;
         transition: width 500ms ease-in-out;
     }
@@ -98,6 +99,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         width: 100%;
+        font-size: 14px;
         transition: width 500ms ease-in-out;
     }
     &__price{

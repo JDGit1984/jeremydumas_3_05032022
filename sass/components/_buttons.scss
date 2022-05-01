@@ -66,14 +66,14 @@
             }
         }
         &:hover .dish__name{
-            @include text-ellipsis;
+            width: calc(100% - 100px);
         }
         &:hover .dish__text{
-            @include text-ellipsis;
+            width: calc(100% - 100px);
         }
         &:hover .dish__price{
             position: relative;
-            right: 70px;
+            transform: translateX(-70px);
         }
     }
     &__name{
@@ -82,6 +82,7 @@
         margin: 0;
         font-size: 17px;
         width: 100%;
+        @include text-ellipsis;
         transition: width 500ms ease-in-out;
     }
     &__body{
@@ -100,13 +101,14 @@
         text-overflow: ellipsis;
         width: 100%;
         font-size: 14px;
+        @include text-ellipsis;
         transition: width 500ms ease-in-out;
     }
     &__price{
         display: block;
         font-weight: bolder;
-        right: 0px;
-        transition: right 500ms ease-in-out;
+        transform: translateX(0px);
+        transition: transform 500ms ease-in-out;
     }
     &__checkbox{
         position: absolute;

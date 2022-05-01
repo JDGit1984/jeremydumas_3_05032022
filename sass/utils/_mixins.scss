@@ -32,7 +32,6 @@
 /* Adaptation de la longueur du text en fonction du :hover */
 
 @mixin text-ellipsis{
-    width: calc(100% - 100px);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

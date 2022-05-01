@@ -468,19 +468,13 @@ footer a:hover {
 }
 .dish__btn:hover .dish__name {
   width: calc(100% - 100px);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .dish__btn:hover .dish__text {
   width: calc(100% - 100px);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .dish__btn:hover .dish__price {
   position: relative;
-  right: 70px;
+  transform: translateX(-70px);
 }
 .dish__name {
   display: inline-block;
@@ -488,6 +482,9 @@ footer a:hover {
   margin: 0;
   font-size: 17px;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   transition: width 500ms ease-in-out;
 }
 .dish__body {
@@ -506,13 +503,16 @@ footer a:hover {
   text-overflow: ellipsis;
   width: 100%;
   font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   transition: width 500ms ease-in-out;
 }
 .dish__price {
   display: block;
   font-weight: bolder;
-  right: 0px;
-  transition: right 500ms ease-in-out;
+  transform: translateX(0px);
+  transition: transform 500ms ease-in-out;
 }
 .dish__checkbox {
   position: absolute;

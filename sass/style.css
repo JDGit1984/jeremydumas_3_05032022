@@ -97,6 +97,11 @@
     border-radius: 26px;
   }
 }
+@media (min-width: 992px) {
+  .booking__form {
+    width: 100%;
+  }
+}
 .booking__hook {
   padding: 0 4%;
   text-align: center;

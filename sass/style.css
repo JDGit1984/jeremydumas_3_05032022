@@ -7,6 +7,20 @@
 /* Adaptation de la couleur du logo en fonction de la luminosité du background */
 /* Adaptation de la longueur du text en fonction du :hover */
 /* Cercles de chargement */
+@media (min-width: 768px) {
+  .book-function {
+    padding: 40px 5%;
+    background: linear-gradient(rgba(153, 226, 208, 0.5), #99E2D0);
+  }
+}
+@media (min-width: 992px) {
+  .book-function {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .loading {
   position: fixed;
   top: 0;
@@ -77,6 +91,12 @@
   box-shadow: inset 0 5px 5px lightgrey;
   margin-bottom: 40px;
 }
+@media (min-width: 768px) {
+  .booking__form {
+    width: 520px;
+    border-radius: 26px;
+  }
+}
 .booking__hook {
   padding: 0 4%;
   text-align: center;
@@ -93,6 +113,18 @@
 }
 .booking h2 {
   text-align: center;
+}
+@media (min-width: 768px) {
+  .booking {
+    border-radius: 40px;
+    padding: 20px 5% 0 5%;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .booking {
+    width: 38%;
+  }
 }
 
 .functioning {
@@ -139,6 +171,17 @@
 .functioning a:hover i {
   color: #9356DC;
 }
+@media (min-width: 768px) {
+  .functioning {
+    background-color: white;
+    border-radius: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .functioning {
+    width: 38%;
+  }
+}
 
 .restaurants {
   padding: 54px 5% 40px 5%;
@@ -182,6 +225,16 @@
   right: 6%;
   bottom: 30px;
 }
+@media (min-width: 768px) {
+  .restaurants .card {
+    width: 48%;
+  }
+}
+@media (min-width: 992px) {
+  .restaurants .card {
+    width: 23%;
+  }
+}
 .restaurants .new {
   position: absolute;
   top: 14px;
@@ -196,6 +249,14 @@
   align-items: center;
   justify-content: space-between;
   padding: 16px 6%;
+}
+
+@media (min-width: 768px) {
+  .cards_group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 /* -- Pages restaurants (x4) -- */
@@ -421,6 +482,7 @@ footer a:hover {
   position: relative;
   border: none;
   background: none;
+  margin-left: 2%;
 }
 .heart-btn:hover .heart-btn__bg {
   height: 32px;
@@ -640,4 +702,34 @@ p {
 }
 .rest_name .heart-btn {
   margin-right: 5%;
+}
+@media (min-width: 992px) {
+  .rest_name {
+    justify-content: start;
+  }
+}
+
+@media (min-width: 768px) {
+  .dishes_group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 992px) {
+  .dishes_group {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .sub-menu-1, .sub-menu-2, .sub-menu-3 {
+    width: 47%;
+  }
+}
+@media (min-width: 992px) {
+  .sub-menu-1, .sub-menu-2, .sub-menu-3 {
+    width: 30%;
+  }
 }/*# sourceMappingURL=style.css.map */

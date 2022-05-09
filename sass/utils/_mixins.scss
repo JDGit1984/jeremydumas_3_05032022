@@ -45,3 +45,7 @@
     border-bottom-color: $circle-color;
     border-radius: 50%;
 }
+
+@mixin tablet-section{
+    border-radius: 40px;
+}

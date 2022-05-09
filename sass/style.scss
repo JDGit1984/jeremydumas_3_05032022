@@ -107,4 +107,28 @@ p{
     .heart-btn{
         margin-right: 5%;
     }
+    @media(min-width:$desktop){
+        justify-content: start;
+    }
+}
+
+.dishes_group{
+    @media(min-width: $tablet){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    @media(min-width: $desktop){
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+.sub-menu-1, .sub-menu-2, .sub-menu-3{
+    @media(min-width: $tablet){
+        width: 47%;
+    }
+    @media(min-width: $desktop){
+        width: 30%;
+    }
 }

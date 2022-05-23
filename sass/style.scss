@@ -1,3 +1,4 @@
+@import "./base/reset";
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./pages/accueil";
@@ -6,72 +7,6 @@
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./components/buttons";
-
-*{
-    font-family: 'Roboto', sans-serif; 
-}
-
-body{
-    position: relative;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-h1{
-    font-family: 'Shrikhand', cursive;
-    font-weight: normal;
-    text-align: center;
-    font-size: 30px;
-    margin: 0;
-    padding: 20px 0 10px 0;
-}
-
-h2, h3{
-    margin-block: 0;
-}
-
-h2{
-    margin-bottom: 14px;
-    font-size: 24px;
-    font-weight: normal;
-}
-
-h3{
-    font-size: 17px;
-    margin-bottom: 4px;
-}
-
-h4{
-    font-family: 'Shrikhand', cursive;
-    margin: 0;
-    font-size: 26px;
-    button{
-        border: none;
-    }
-}
-
-h5{
-    margin-block: 0;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 16px;
-    margin-top: 22px;
-    &::after{
-        content:"";
-        display: block;
-        background-color: $color-tertiary;
-        height: 4px;
-        width: 42px;
-        margin: 4px 0 12px 0;
-    }
-}
-
-p{
-    margin-block: 0;
-}
 
 .fa-map-marker-alt{
     color: $darkgrey;

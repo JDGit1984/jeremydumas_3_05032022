@@ -178,6 +178,9 @@
             border-radius: 16px 16px 0 0;
         }
         article{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             background-color: white;
             border-radius: 0 0 16px 16px;
             height: 44px;
@@ -207,12 +210,6 @@
         padding: 6px 12px;
         font-size: 14px;
         @include darkened_text($color-tertiary);
-    }
-    article{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 16px 6%;
     }
 }
 .cards_group{

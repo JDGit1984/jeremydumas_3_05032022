@@ -6,8 +6,7 @@
     text-align: center;
     padding: 16px;
     background: linear-gradient($color-secondary, $color-primary);
-    border-radius: 24px;
-    @include box-shadow(lightgrey, 56px);
+    @include box-shadow($margin-bottom: 56px, $border-radius: 24px);
     margin-top: 30px;
     &:hover{
         filter: brightness(1.2);
@@ -49,9 +48,8 @@
 .dish{
     position: relative;
     min-height: 70px;
-    border-radius: 16px;
     overflow: hidden;
-    @include box-shadow (lightgrey, 12px);
+    @include box-shadow ($margin-bottom: 12px, $border-radius: 16px);
     &__btn{
         cursor: pointer;
         width: 100%;

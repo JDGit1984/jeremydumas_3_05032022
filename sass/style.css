@@ -57,13 +57,13 @@ p {
 /* Adaptation de la couleur du logo en fonction de la luminosité du background */
 /* Adaptation de la longueur du text en fonction du :hover */
 /* Cercles de chargement */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .book-function {
     padding: 40px 5%;
     background: linear-gradient(rgba(153, 226, 208, 0.5), #99E2D0);
   }
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .book-function {
     display: flex;
     justify-content: space-between;
@@ -141,13 +141,13 @@ p {
   box-shadow: inset 0 5px 5px lightgrey;
   margin-bottom: 40px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .booking__form {
     width: 520px;
     border-radius: 26px;
   }
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .booking__form {
     width: 100%;
   }
@@ -169,16 +169,17 @@ p {
 .booking h2 {
   text-align: center;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .booking {
     border-radius: 40px;
     padding: 20px 5% 0 5%;
     margin-bottom: 40px;
   }
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .booking {
     width: 38%;
+    margin-bottom: 0px;
   }
 }
 
@@ -226,13 +227,13 @@ p {
 .functioning a:hover i {
   color: #9356DC;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .functioning {
     background-color: white;
     border-radius: 40px;
   }
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .functioning {
     width: 38%;
   }
@@ -283,12 +284,12 @@ p {
   right: 6%;
   bottom: 30px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .restaurants .card {
     width: 48%;
   }
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .restaurants .card {
     width: 23%;
   }
@@ -303,7 +304,7 @@ p {
   color: #2c9c81;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .cards_group {
     display: flex;
     flex-wrap: wrap;
@@ -689,7 +690,7 @@ footer a:hover {
 .rest_name .heart-btn {
   margin-right: 5%;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .rest_name {
     justify-content: start;
   }
@@ -713,26 +714,26 @@ footer a:hover {
   width: 42px;
   margin: 4px 0 12px 0;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .dishes_group {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .dishes_group {
     width: 100%;
     justify-content: space-between;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .sub-menu-1, .sub-menu-2, .sub-menu-3 {
     width: 47%;
   }
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .sub-menu-1, .sub-menu-2, .sub-menu-3 {
     width: 30%;
   }

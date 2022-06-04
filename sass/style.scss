@@ -48,6 +48,22 @@
 }
 
 .dishes_group{
+    width: 100%;
+    h5{
+        margin-block: 0;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 16px;
+        margin-top: 22px;
+        &::after{
+            content:"";
+            display: block;
+            background-color: $color-tertiary;
+            height: 4px;
+            width: 42px;
+            margin: 4px 0 12px 0;
+        }
+    }
     @media(min-width: $tablet){
         display: flex;
         flex-wrap: wrap;

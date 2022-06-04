@@ -15,7 +15,7 @@
 @mixin box-shadow($color: lightgrey, $margin-bottom: 22px, $border-radius: 20px){
     box-shadow: 0 5px 10px $color;
     margin-bottom: $margin-bottom;
-    $border-radius: $border-radius;
+    border-radius: $border-radius;
 }
 
 /* Adaptation de la couleur du logo en fonction de la luminosité du background */
